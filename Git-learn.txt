@@ -1,34 +1,28 @@
-#注册
+﻿#注册
 git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
-
 #目录
 mkdir Git
 cd Git
 pwd
-
 #生产库
 git init
-
-
 #添加
 git add Git-learn.txt
-
 #更新
 git commit -m "wrote a readme file"
-
 #查看
 git status
-
 #比较
 git diff Git-learn.txt
-
 #列表
 git log
 git log --pretty=oneline
 git reflog
-
 #还原
 git reset --hard HEAD^
 git reset --hard HEAD-1
 git reset --hard 1094a
+#回撤
+git checkout -- readme.txt
+git restore Git-learn.txt
