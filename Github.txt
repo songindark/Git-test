@@ -1,0 +1,13 @@
+#SSHKEY
+ssh-keygen -t rsa -C "songindark@qq.com"
+#关联
+git remote add origin git@github.com:songindark/Git-learn.git
+git remote add origin https://github.com/songindark/learn-git.git
+#推送
+git push -u origin master
+git push origin master
+git branch -M main
+git push -u origin main
+git push origin main
+#克隆
+git clone git@github.com:songindark/Git-learn.git

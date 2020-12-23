@@ -1,0 +1,17 @@
+#注册
+git config --global user.name "songindark"
+git config --global user.email "songindark@qq.com"
+#目录
+mkdir Git
+cd Git
+pwd
+#生产库
+git init
+#添加
+git add Git-learn.txt
+#更新
+git commit -m "wrote a readme file"
+#查看
+git status
+#比较
+git diff Git-learn.txt

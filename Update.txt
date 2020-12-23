@@ -1,0 +1,16 @@
+#列表
+git log
+git log --pretty=oneline
+git reflog
+#还原
+git reset --hard HEAD^
+git reset --hard HEAD-1
+git reset --hard 1094a
+#回撤
+git reset HEAD Git-learn.txt
+git restore Git-learn.txt
+git checkout -- Git-learn.txt
+#删除
+git rm Git-learn.txt
+git commit -m "remove test.txt"
+git checkout -- Git-learn.txt
