@@ -35,7 +35,7 @@ git checkout -- Git-learn.txt
 ssh-keygen -t rsa -C "songindark@qq.com"
 登陆GitHub-“Account settings”-“SSH Keys”-“Add SSH Key”，-在Key文本框里粘贴id_rsa.pub文件的内容：
 #关联
-git remote add origin git@github.com:songindark/Git-learn.git
+git remote add origin git@github.com:songindark@qq.com/Git-learn.git
 #推送
 git push -u origin master
 git push origin master
