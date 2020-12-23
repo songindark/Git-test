@@ -1,0 +1,18 @@
+#注册
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+#目录
+mkdir Git
+cd Git
+pwd
+
+#生产库
+git init
+
+
+#添加
+git add Git-learn.txt
+
+#更新
+git commit -m "wrote a readme file"
