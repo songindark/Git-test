@@ -1,11 +1,12 @@
-#注册
+﻿#注册
 git config --global user.name "songindark"
 git config --global user.email "songindark@qq.com"
 #目录
 mkdir Git
+#切换
 cd Git
 pwd
-#生产库
+#新建库
 git init
 #添加
 git add Git-learn.txt

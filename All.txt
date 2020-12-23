@@ -21,7 +21,7 @@ git log --pretty=oneline
 git reflog
 #还原
 git reset --hard HEAD^
-git reset --hard HEAD-1
+git reset --hard HEAD-2
 git reset --hard 1094a
 #回撤
 git reset HEAD Git-learn.txt
@@ -45,3 +45,29 @@ git push -u origin main
 git push origin main
 #克隆
 git clone git@github.com:songindark/Git-learn.git
+#查看分支
+git branch
+#创建分支
+git branch <name>
+#切换分支
+git checkout <name>
+git switch <name>
+#创建+切换分支
+git checkout -b <name>
+git switch -c <name>
+#合并某分支到当前分支
+git merge <name>
+#删除分支
+git branch -d <name>
+#创建标签
+git tag <name>
+#创建标签
+git tag <name>
+#推送一个本地标签
+git push origin <tagname>
+#推送全部未推送过的本地标签
+git push origin --tags
+#删除一个本地标签；
+git tag -d <tagname>
+#删除一个远程标签。
+git push origin :refs/tags/<tagname>
