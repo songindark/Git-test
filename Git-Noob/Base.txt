@@ -1,4 +1,4 @@
-#注册
+﻿#注册
 git config --global user.name "username"
 git config --global user.email "email@qq.com"
 #目录
@@ -19,3 +19,5 @@ git diff filename
 #自定义
 git config --global alias.last 'log -1'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+#ignore
+touch .gitignore

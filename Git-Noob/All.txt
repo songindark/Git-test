@@ -23,14 +23,23 @@ git reflog
 git reset --hard HEAD^
 git reset --hard HEAD-2
 git reset --hard 1094a
-#回撤
+#回撤ADD文件本地不修改
 git reset HEAD filename
-git restore filename
+git restore --staged
+#回撤没有ADD的本地修改
 git checkout -- filename
+git restore filename
+git reset HEAD --hard
 #删除
 git rm filename
 git commit -m "remove test.txt"
 git checkout -- filename
+#删除 untracked files
+git clean -n
+#反做
+git revert -n 版本号
+#提交
+git commit -m 版本名
 #SSHKEY
 ssh-keygen -t rsa -C "email@qq.com"
 登陆GitHub-“Account settings”-“SSH Keys”-“Add SSH Key”，-在Key文本框里粘贴id_rsa.pub文件的内容：
@@ -74,3 +83,5 @@ git push origin :refs/tags/<tagname>
 #自定义
 git config --global alias.last 'log -1'
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+#ignore
+touch .gitignore

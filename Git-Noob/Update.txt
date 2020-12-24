@@ -12,10 +12,13 @@ git restore --staged
 #回撤没有ADD的本地修改
 git checkout -- filename
 git restore filename
+git reset HEAD --hard
 #删除
 git rm filename
 git commit -m "remove test.txt"
 git checkout -- filename
+#删除 untracked files
+git clean -n
 #反做
 git revert -n 版本号
 #提交
