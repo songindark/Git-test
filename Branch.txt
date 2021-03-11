@@ -1,4 +1,4 @@
-#查看分支
+﻿#查看分支
 git branch
 #创建分支
 git branch <name>
@@ -23,3 +23,5 @@ git push origin --tags
 git tag -d <tagname>
 #删除一个远程标签。
 git push origin :refs/tags/<tagname>
+#查看历史
+git log --oneline --decorate --graph --all
