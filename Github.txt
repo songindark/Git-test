@@ -1,5 +1,6 @@
 #SSHKEY
 ssh-keygen -t rsa -C "email@qq.com"
+登陆GitHub-“Account settings”-“SSH Keys”-“Add SSH Key”，-在Key文本框里粘贴id_rsa.pub文件的内容：
 #关联
 git remote add origin git@github.com:username/Git-learn.git
 git remote add origin https://github.com/username/learn-git.git

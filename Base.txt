@@ -18,7 +18,7 @@ git status
 git diff filename
 #自定义
 git config --global alias.last 'log -1'
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.tree "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 #ignore
 touch .gitignore
 git update-index --assume-unchanged PATH/FILE

@@ -3,6 +3,7 @@ git log
 git log --pretty=oneline
 git reflog
 #还原
+#还原2步
 git reset --hard HEAD^
 git reset --hard HEAD-2
 git reset --hard 1094a

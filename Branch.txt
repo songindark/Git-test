@@ -25,3 +25,9 @@ git tag -d <tagname>
 git push origin :refs/tags/<tagname>
 #查看历史
 git log --oneline --decorate --graph --all
+#合并某分支到当前分支
+git merge <name>
+git rebase <name>
+git merge --no-ff
+git merge --squash
+
