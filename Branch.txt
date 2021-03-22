@@ -12,6 +12,10 @@ git switch -c <name>
 git merge <name>
 #删除分支
 git branch -d <name>
+#删除远程分支
+git push origin --delete <name>
+#清理本地无效分支(远程已删除本地没删除的分支)
+git fetch -p
 #标签
 #创建标签
 git tag <name>
@@ -30,4 +34,17 @@ git merge <name>
 git rebase <name>
 git merge --no-ff
 git merge --squash
-
+#强制覆盖本地文件
+git fetch --all
+git reset --hard origin/<branch_name>
+#暂存修改
+git stash [save message]
+#查看暂存
+git stash list
+#删除所有保存
+git stash drop stash@{num}
+git stash clear
+#恢复一次
+git stash pop stash@{num}
+#回复多次
+git stash apply stash@{num}
