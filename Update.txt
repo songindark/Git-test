@@ -1,26 +1,26 @@
-#列表
+﻿#列表
 git log
-git log --pretty=oneline
 git reflog
 #还原
-#还原2步
+#hard 差异被放弃
+#soft 差异进缓存区
+#mixed 差异进工作区
+git reset --hard [commit|HEAD]
+git reset --soft [commit|HEAD]
+git reset (mixed) [commit|HEAD]
+git reset HEAD fileName
+#还原1步
 git reset --hard HEAD^
+#还原2步
 git reset --hard HEAD-2
-git reset --hard 1094a
 #回撤ADD文件本地不修改
-git reset HEAD filename
 git restore --staged
-#回撤没有ADD的本地修改
+#checkout与add为反义词，所以add了就不能checkout
 git checkout -- filename
+#回撤没有ADD的本地修改
 git restore filename
 git reset HEAD --hard
 #删除
 git rm filename
 git commit -m "remove test.txt"
 git checkout -- filename
-#删除 untracked files
-git clean -n
-#反做
-git revert -n 版本号
-#提交
-git commit -m 版本名
