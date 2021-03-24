@@ -1,4 +1,4 @@
-﻿#注册
+#注册
 git config --global user.name "username"
 git config --global user.email "email@qq.com"
 #目录
